@@ -1,0 +1,75 @@
+.phrase-container {
+	position: relative;
+	text-align: right;
+	left: 60%;
+	max-width: 40%;
+}
+
+.phrase-container .phrase {
+	line-height: 30px;
+	margin-bottom: 1rem;
+	font-weight: lighter;
+}
+
+.phrase-container .phrase_autor {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.hour-container_main {
+	width: 100%;
+}
+
+.hour-container_main .actual-time_message {
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.icon-actual_time {
+	margin-right: 20px;
+}
+
+.hour-container_main .hour-main {
+	font-size: 5em;
+	transition: 1s;
+}
+
+@media (max-width: 860px) {
+	.phrase-container {
+		position: static;
+		max-width: 100%;
+	}
+
+	.phrase {
+		font-size: 0.8em;
+	}
+
+	.phrase_autor {
+		font-size: 1em;
+	}
+
+	.hour-container_main .actual-time_message {
+		align-items: flex-start;
+		font-size: 1.3em;
+		width: 100%;
+		text-align: left;
+	}
+
+	.icon-actual_time {
+		margin-right: 20px;
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 350px) {
+
+	.hour-container_main .actual-time_message {
+		font-size: 1.3em;
+		width: 100%;
+		text-align: left;
+	}
+
+	.hour-main h1 {
+		font-size: 1em;
+	}
+}
