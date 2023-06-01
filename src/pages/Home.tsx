@@ -14,7 +14,6 @@ const Home: React.FC = () => {
 		minutes: new Date().getMinutes(),
 		years: new Date().getFullYear(),
 	});
-
 	const [backgroundImage, setBackgroundImage] = useState(dayBg);
 
 	const ternaryMessage = {
@@ -49,7 +48,7 @@ const Home: React.FC = () => {
 		}, 1000);
 
 		return () => clearInterval(interval);
-	}, []);
+	}, [actualTime]);
 
 	useEffect(() => {
 		if (actualTime.hours >= 18 || actualTime.hours < 6) {
@@ -71,13 +70,10 @@ const Home: React.FC = () => {
 		>
 			<div className="phrase-container">
 				<div className="phrase">
-					"Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Nihil sapiente aut provident aperiam tenetur
-					minima possimus quia aliquid cupiditate deserunt
-					explicabo iusto debitis, vero blanditiis voluptate
-					eveniet exercitationem incidunt cum."
+					"Os problemas são oportunidades para se mostrar o que
+					sabe."
 				</div>
-				<div className="phrase_autor">Chupador de pintos.</div>
+				<div className="phrase_autor">Duke Ellington</div>
 			</div>
 			<Container
 				dir="column"
